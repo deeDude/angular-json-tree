@@ -1,8 +1,8 @@
 {
-  "name": "angular-json-tree",
-  "version": "1.0.1",
-  "description": "Angular directive for displaying a JSON object in an expandable tree structure",
-  "main": "dist/angular-json-tree.js",
+  "name": "angular-user-friendly-json-tree",
+  "version": "1.0.0",
+  "description": "Angular directive for displaying, in a user friendly way, a JSON object in an expandable tree structure",
+  "main": "dist/user-friendly-angular-json-tree.js",
   "directories": {
     "test": "test"
   },
@@ -12,6 +12,7 @@
     "gulp": "^3.9.1",
     "gulp-autoprefixer": "^3.1.0",
     "gulp-bower-files": "^0.2.7",
+    "gulp-clean-css": "^3.9.0",
     "gulp-concat": "^2.5.2",
     "gulp-jshint": "^2.0.1",
     "gulp-less": "^3.1.0",
@@ -38,16 +39,19 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/awendland/angular-json-tree.git"
+    "url": "git+https://github.com/deeDude/angular-json-tree.git"
   },
   "keywords": [
     "angular",
     "json"
   ],
   "author": "Alex Wendland <me@alexwendland.com>",
+  "contributors": [
+    "Pedro Milheiro <pmarques123@gmail.com>"
+  ],
   "license": "CC-BY-4.0",
   "bugs": {
-    "url": "https://github.com/awendland/angular-json-tree/issues"
+    "url": "https://github.com/deeDude/angular-json-tree/issues"
   },
-  "homepage": "https://github.com/awendland/angular-json-tree#readme"
+  "homepage": "https://github.com/deeDude/angular-json-tree#readme"
 }

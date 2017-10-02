@@ -1,0 +1,69 @@
+/* Structure */
+user-friendly-json-tree {
+  box-sizing: border-box;
+}
+user-friendly-json-tree *,
+user-friendly-json-tree *:before,
+user-friendly-json-tree *:after {
+  box-sizing: border-box;
+}
+user-friendly-json-tree .key {
+  vertical-align: middle;
+}
+user-friendly-json-tree .expandable {
+  position: relative;
+}
+user-friendly-json-tree .expandable::before {
+  pointer-events: none;
+}
+user-friendly-json-tree .expandable::before,
+user-friendly-json-tree .expandable > .key {
+  cursor: pointer;
+}
+user-friendly-json-tree .branch-preview {
+  display: inline-block;
+  vertical-align: middle;
+}
+/* Looks */
+user-friendly-json-tree ul {
+  padding-left: 20px;
+}
+user-friendly-json-tree li,
+user-friendly-json-tree ul {
+  list-style: none;
+}
+user-friendly-json-tree li {
+  line-height: 1.5em;
+}
+user-friendly-json-tree .key {
+  color: #007AFF;
+  font-weight: bold;
+  padding: 5px 10px 5px 15px;
+}
+user-friendly-json-tree .key::after {
+  content: ':';
+}
+user-friendly-json-tree user-friendly-json-node.expandable::before {
+  content: '\25b6';
+  position: absolute;
+  left: 0px;
+  font-size: 10px;
+  transition: -webkit-transform .1s ease;
+  transition: transform .1s ease;
+  transition: transform .1s ease, -webkit-transform .1s ease;
+}
+user-friendly-json-tree user-friendly-json-node.expandable.expanded::before {
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+user-friendly-json-tree .leaf-value,
+user-friendly-json-tree .branch-preview {
+  word-break: break-all;
+}
+user-friendly-json-tree .branch-preview {
+  overflow: hidden;
+  font-style: italic;
+  max-width: 40%;
+  height: 1.5em;
+  opacity: .7;
+}

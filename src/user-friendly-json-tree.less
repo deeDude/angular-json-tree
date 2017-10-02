@@ -1,5 +1,5 @@
 /* Structure */
-json-tree {
+user-friendly-json-tree {
     box-sizing: border-box;
     *, *:before, *:after {
         box-sizing: border-box;
@@ -23,7 +23,7 @@ json-tree {
 }
 
 /* Looks */
-json-tree {
+user-friendly-json-tree {
     ul {
         padding-left: 20px;
     }
@@ -34,13 +34,14 @@ json-tree {
         line-height: 1.5em;
     }
     .key {
-        color: #D02828;
+        color: #007AFF;
+        font-weight: bold;
         padding: 5px 10px 5px 15px;
         &::after {
             content: ':';
         }
     }
-    json-node.expandable {
+    user-friendly-json-node.expandable {
         &::before {
             content: '\25b6';
             position: absolute;
