@@ -4,6 +4,8 @@ This plugin allows an easily way to visualize JSON/JS Object trees, in a user fr
 
 This is nice and easy because all you should have to do is include the directive in your app, and then pass a reference to the directive of which object on the scope you want it to display.
 
+The user friendly display of the Json/JS object tree works by formatting the tree's nodes names from camel cased to uncamel cased names; it also provides a user friendly way to visualize nodes with dates in milliseconds and empty nodes.
+
 A live implementation of this directive can be found at [http://blog.alexwendland.com/angular-json-tree/](http://blog.alexwendland.com/angular-json-tree/) and the source for that project can be found on the [gh-pages branch](https://github.com/awendland/angular-json-tree/tree/gh-pages).
 
 **Requirements:** AngularJS 1.2+
