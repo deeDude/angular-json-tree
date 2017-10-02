@@ -21,8 +21,13 @@
  *          test: 'hello',
  *          array: [1,1,2,3,5,8]
  *      };
+ *      scope.someOptions = {
+ *          toggleBranchText: 'click to expand',
+ *          emptyValueText: 'none',
+ *          dateFormat: 'yyyy-MM-dd HH:mm:ss'
+ *      };
  *      // In the html
- *      <user-friendly-json-tree object="someObject"></user-friendly-json-tree>
+ *      <user-friendly-json-tree object="someObject" options="someOptions"></user-friendly-json-tree>
  *
  *  Dependencies:
  *      - utils (user-friendly-json-tree.js)
@@ -34,7 +39,11 @@
 (function () {
     'use strict';
 
-    var options = {};
+    var options = { // default values
+        toggleBranchText: 'click to expand',
+        emptyValueText: 'none',
+        dateFormat: 'yyyy-MM-dd HH:mm:ss'
+    };
 
     var utils = {
         /* See link for possible type values to check against.
@@ -113,11 +122,9 @@
                 },
                 template: '<user-friendly-json-node key="rootName() || \'Object\'" value="object" start-expanded="startExpanded()"></user-friendly-json-node>',
                 link: function (scope, elem, attr) {
-                    options = {
-                        toggleBranchText: scope.options.toggleBranchText || 'click to expand',
-                        emptyValueText: scope.options.emptyValueText || 'none',
-                        dateFormat: scope.options.dateFormat || 'yyyy-MM-dd HH:mm:ss'
-                    };
+                    if(scope.options) {
+                        options = angular.extend(options, scope.options);
+                    }
                 }
             };
         }])
