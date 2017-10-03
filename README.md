@@ -58,7 +58,7 @@ $ bower install user-friendly-angular-json-tree
 
 ## Why I created this:
 
-I was searching for a way to easily display,in a user friendly way, the JSON results from an API endpoint. The objects were dynamic and followed no uniform pattern. Thus I created this AngularJS directive. Given the above input (from Usage), you can see below the final result produced by this directive:
+I was searching for a way to easily display,in a user friendly way, the JSON results from an API endpoint. The objects were dynamic and followed no uniform pattern. Thus I created this AngularJS directive. Given the above input (from Usage), you can see below, on the right, the final result produced by this directive:
 
 ![Example Output](readme/example_output.png)
 
