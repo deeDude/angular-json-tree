@@ -28,13 +28,14 @@ JavaScript:
 
 ```javascript
 $scope.someobj = {
-    greetings: ["hi", "hello", "welcome"],
-    parent: {
-        child: "name",
-        age: 42
+    test: 'hello',
+    someArray: [1, 2, 3, 4, 5, 6],
+    subObj: {
+    subTest: 'hi',
+    subArray: [2, 1, 3, 4, 7, 11]
     },
-    someDateInMs: 1505296820331,
-    emptyField: ''
+    withDate: 1505296820331,
+    emptyVal: ''
 };
 
 $scope.someOptions = {
@@ -57,7 +58,7 @@ $ bower install user-friendly-angular-json-tree
 
 ## Why I created this:
 
-I was searching for a way to easily display the JSON results from an API endpoint, in a user friendly way. The objects were dynamic and followed no uniform pattern. Thus I created this AngularJS directive. Given the above input (from Usage), it would produce an expandable object similar to:
+I was searching for a way to easily display,in a user friendly way, the JSON results from an API endpoint. The objects were dynamic and followed no uniform pattern. Thus I created this AngularJS directive. Given the above input (from Usage), you can see below the final result produced by this directive:
 
 ![Example Output](readme/example_output.png)
 
