@@ -37,12 +37,6 @@ $scope.someobj = {
     withDate: 1505296820331,
     emptyVal: ''
 };
-
-$scope.someOptions = {
-    toggleBranchText: 'click to expand',
-    emptyValueText: 'none',
-    dateFormat: 'yyyy-MM-dd HH:mm:ss'
-};
 ```
 
 HTML:
@@ -83,6 +77,13 @@ The object property takes the name of an options object on the $scope. This obje
 * date format for leaf fields values of type `Date` (`dateFormat` option). The directive considers a leaf node to be of type `Date`, if the node's name ends with the word "Date" and its value is a date in milliseconds. The Default value of this options is the ISO 8601 format "yyyy-MM-dd HH:mm:ss"
 * a user friendly text to represent empty values of nodes (`emptyValueText` option). Default value is "none"
 
+```javascript
+$scope.someOptions = {
+    toggleBranchText: 'click to expand',
+    emptyValueText: 'none',
+    dateFormat: 'yyyy-MM-dd HH:mm:ss'
+};
+```
 
 ```html
 <user-friendly-json-tree object="someobj" options="someOptions"></user-friendly-json-tree>
