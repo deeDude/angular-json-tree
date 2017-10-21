@@ -47,7 +47,7 @@ HTML:
 
 ### via bower:
 ```
-$ bower install user-friendly-angular-json-tree
+$ bower install angular-user-friendly-json-tree
 ```
 
 ## Why I created this:
