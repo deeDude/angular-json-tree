@@ -140,7 +140,7 @@
                     return ajsRecursiveDirectiveHelper.compile(elem, this);
                 },
                 template: ' <span class="key" ng-click="toggleExpanded()">{{formatedKey}}</span>' +
-                '       <span class="leaf-value" ng-if="!isExpandable">{{value ? value : options.emptyValueText}}</span>' +
+                '       <span class="leaf-value" ng-if="!isExpandable">{{value!=null : options.emptyValueText}}</span>' +
                 '       <span class="branch-preview" ng-if="isExpandable" ng-show="!isExpanded" ng-click="toggleExpanded()">{{options.toggleBranchText}}</span>' +
                 '       <ul class="branch-value" ng-if="isExpandable && shouldRender" ng-show="isExpanded">' +
                 '           <li ng-repeat="(subkey,subval) in value">' +
